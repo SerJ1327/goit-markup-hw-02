@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.link.link-active {
+  color: var(--primary-brand-color);
+}
+
 .main-title {
   font-weight: 600;
   font-size: 36px;
