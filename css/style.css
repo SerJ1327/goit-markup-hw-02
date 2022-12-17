@@ -1,0 +1,169 @@
+/* Основний колір тексту #434455
+	Другий колір тексту #2e2f42
+	Колір акценту #4D5AE5
+	 */
+
+:root {
+  --primary-brand-color: #4d5ae5;
+  --dark-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-logo-color: #f4f4fd;
+
+  --white-text-color: #ffffff;
+  --font-logo: Raleway, sans-serif;
+}
+
+/* -----------Скидання стандартних стилів----------- */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.link-design {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.main-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.second-titele {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  color: var(--primary-brand-color);
+  font-family: var(--font-logo);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-adress-link:hover,
+.header-adress-link:focus,
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--primary-brand-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--white-text-color);
+}
+
+/* -----------BODY---------------- */
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+}
+
+/* -----------HEADER---------------- */
+.header-logo {
+  color: var(--dark-color);
+}
+
+.header-link {
+  /* font-weight - live server промальовує 600 хоча підключені тільки 400 і 500 */
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.header-adress-link {
+  font-style: normal;
+  color: var(--text-color);
+}
+
+/* -----------HERO---------------- */
+.hero-title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-text-color);
+  /* ---------------------------------------Test */
+  background: blueviolet;
+}
+
+.hero-button {
+  color: var(--white-text-color);
+
+  /* ---------------------------------------Test */
+  background: blueviolet;
+}
+
+/* -----------BENEFITS---------------- */
+
+.benefits-item-text {
+}
+
+/* -----------TEAM---------------- */
+
+.team-item-text {
+}
+
+/* -----------FOOTER---------------- */
+.footer-logo {
+  color: var(--light-logo-color);
+  /* ---------------------------------------Test */
+  background: blueviolet;
+}
+
+.footer-text {
+  color: var(--accent-color);
+  /* ---------------------------------------Test */
+  background: blueviolet;
+}
+
+/* -----------PORTFOLIO-PAGE---------------- */
+
+.portfolio-button {
+  color: var(--primary-brand-color);
+}
