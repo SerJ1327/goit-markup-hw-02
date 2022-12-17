@@ -84,12 +84,21 @@
 }
 
 .header-link:hover,
+.header-adress-link:hover {
+  color: var(--text-color);
+}
+
 .header-link:focus,
-.header-adress-link:hover,
-.header-adress-link:focus,
-.hero-button:hover,
-.hero-button:focus {
+.header-adress-link:focus {
   color: var(--primary-brand-color);
+}
+
+.hero-button:hover {
+  /* згідно Style Guide при наведенні стиль не змінюється */
+}
+
+.hero-button:focus {
+  background: #404bbf;
 }
 
 .portfolio-button:hover,
@@ -128,6 +137,7 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-text-color);
+
   /* ---------------------------------------Test */
   background: blueviolet;
 }
@@ -151,12 +161,14 @@ body {
 /* -----------FOOTER---------------- */
 .footer-logo {
   color: var(--light-logo-color);
+
   /* ---------------------------------------Test */
   background: blueviolet;
 }
 
 .footer-text {
   color: var(--accent-color);
+
   /* ---------------------------------------Test */
   background: blueviolet;
 }
