@@ -79,7 +79,6 @@
 .button {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
 }
@@ -96,6 +95,7 @@
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--white-text-color);
+  background: var(--primary-brand-color);
 }
 
 /* -----------BODY---------------- */
@@ -110,19 +110,20 @@ body {
 }
 
 .header-link {
-  /* font-weight - браузер промальовує 600 хоча підключені тільки 400 і 500 */
-  font-weight: 600;
+  /* font-weight - браузер промальовує 600 хоча підключені тільки 400, 500, 700 і 900 
+  на всяк випадок поставив 500*/
+  font-weight: 500;
   color: var(--dark-color);
 }
 
 .header-adress-link {
   font-style: normal;
-  color: var(--text-color);
+  color: inherit;
 }
 
 /* -----------HERO---------------- */
 .hero-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -132,10 +133,9 @@ body {
 }
 
 .hero-button {
+  line-height: 1.19;
   color: var(--white-text-color);
-
-  /* ---------------------------------------Test */
-  background: blueviolet;
+  background: var(--primary-brand-color);
 }
 
 /* -----------BENEFITS---------------- */
@@ -164,5 +164,7 @@ body {
 /* -----------PORTFOLIO-PAGE---------------- */
 
 .portfolio-button {
+  line-height: 1.5;
   color: var(--primary-brand-color);
+  background: var(--light-logo-color);
 }
