@@ -6,8 +6,8 @@
   --subtle-text-color: #8e8f99;
   --accent-color: #e7e9fc;
   --light-logo-color: #f4f4fd;
-
-  --white-text-color: #ffffff;
+  --portfolio-main-color: #e5e5e5;
+  --white-color: #ffffff;
   --font-logo: Raleway, sans-serif;
 }
 
@@ -82,13 +82,13 @@
   cursor: pointer;
 }
 
-.header-link:hover,
-.header-adress-link:hover {
+.header-link:hover {
   color: var(--text-color);
 }
 
 .header-link:focus,
-.header-adress-link:focus {
+.header-adress-link:focus,
+.header-adress-link:hover {
   color: var(--primary-brand-color);
 }
 
@@ -102,7 +102,7 @@
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: var(--white-text-colo);
+  color: var(--white-color);
   background: var(--primary-brand-color);
 }
 
@@ -110,6 +110,7 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--text-color);
+  background-color: var(--white-color);
 }
 
 /* -----------HEADER---------------- */
@@ -118,8 +119,6 @@ body {
 }
 
 .header-link {
-  /* font-weight - браузер промальовує 600 хоча підключені тільки 400, 500, 700 і 900 
-  на всяк випадок поставив 500*/
   font-weight: 500;
   color: var(--dark-color);
 }
@@ -130,25 +129,30 @@ body {
 }
 
 /* -----------HERO---------------- */
+
+.hero {
+  background-color: var(--dark-color);
+}
+
 .hero-title {
   font-weight: 500;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: var(--white-text-color);
-
-  /* ---------------------------------------Test */
-  background: blueviolet;
+  color: var(--white-color);
 }
 
 .hero-button {
   line-height: 1.19;
-  color: var(--white-text-color);
+  color: var(--white-color);
   background: var(--primary-brand-color);
+  font-family: Roboto, sans-serif;
 }
 
 /* -----------BENEFITS---------------- */
-
+.team {
+  background-color: var(--light-logo-color);
+}
 .benefits-item-text {
 }
 
@@ -158,23 +162,25 @@ body {
 }
 
 /* -----------FOOTER---------------- */
+.footer {
+  background-color: var(--dark-color);
+}
+
 .footer-logo {
   color: var(--light-logo-color);
-
-  /* ---------------------------------------Test */
-  background: blueviolet;
 }
 
 .footer-text {
   color: var(--accent-color);
-
-  /* ---------------------------------------Test */
-  background: blueviolet;
 }
 
 /* -----------PORTFOLIO-PAGE---------------- */
+.portfolio-section {
+  background-color: var(--portfolio-main-color);
+}
 
 .portfolio-button {
+  font-family: Roboto, sans-serif;
   line-height: 1.5;
   color: var(--primary-brand-color);
   background: var(--light-logo-color);
